@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Forge | Crafting Digital Excellence</title>
+    <meta name="description"
+        content="Pixel Forge builds exceptional websites and apps tailored for performance, aesthetics, and conversion." />
+        <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="favicon.png" type="png" sizes="32x32">
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-logo">
+            <i class="fas fa-rocket loader-logo-icon"></i>
+            <div class="loader-logo-text">PixelForge</div>
+        </div>
+        <div class="loader">
+            <div class="loader-dot dot-1"></div>
+            <div class="loader-dot dot-2"></div>
+            <div class="loader-dot dot-3"></div>
+            <div class="loader-dot dot-4"></div>
+        </div>
+        <div class="loader-text">Crafting Digital Excellence</div>
+        <div class="loader-progress">
+            <div class="loader-progress-bar" id="loaderProgress"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-rocket logo-icon"></i>
+                <span class="logo-text">PixelForge</span>
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item"><a href="#services" class="nav-link"><i class="fas fa-briefcase"></i>
+                            Services</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link"><i class="fas fa-image"></i>
+                            Portfolio</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link"><i class="fas fa-users"></i> Team</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                    <li class="nav-item"><button class="nav-cta magnetic"><i class="fas fa-paper-plane"></i> Hire
+                            Us</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="142815-780943566_small.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line" style="color: white;">Crafting Digital</span>
+                        <span class="title-line highlight">Masterpieces</span>
+                    </h1>
+                    <p class="hero-subtitle">We design & develop stunning digital experiences that drive results and
+                        captivate audiences</p>
+
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary pulse">
+                            <i class="fas fa-paper-plane"></i> Get Started
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline">
+                            <i class="fas fa-eye"></i> View Our Work
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="55">0</div>
+                        <div class="stat-label">Projects done</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Crafting Digital Excellence Since 2018</h2>
+                    <p>Pixel Forge was founded with a simple mission: to create digital experiences that not only look
+                        stunning but also deliver measurable results for our clients.</p>
+                    <p>Our team of passionate developers, designers, and strategists work collaboratively to transform
+                        your vision into a powerful digital presence that stands out in today's competitive landscape.
+                    </p>
+                    <p>We believe in building long-term relationships with our clients, which is why we focus on
+                        understanding your unique needs and delivering solutions that drive real business growth.</p>
+                    <a href="#team" class="btn btn-primary">Meet Our Team</a>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Pixel Forge Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container services-container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 3rem;">We offer comprehensive digital
+                solutions tailored to your business needs, from design to development and beyond.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites built for performance, scalability, and user experience using the latest
+                        technologies and frameworks.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Cross-platform mobile applications that deliver seamless experiences across iOS and Android
+                        devices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Comprehensive SEO strategies to improve your visibility and drive qualified traffic to your
+                        website.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive interfaces designed to engage users and enhance conversion rates.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce</h3>
+                    <p>Powerful online stores with secure payment gateways and inventory management systems.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Targeted campaigns to increase brand awareness and generate qualified leads for your business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container team-container">
+            <h2 class="section-title">Our Creative Team</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 3rem;">Meet the talented individuals who
+                bring your digital vision to life with expertise and passion.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img-container">
+                        <img src="david.jpg" alt="dave" class="member-img">
+                    </div>
+                    <h3>David Okonkwo</h3>
+                    <span class="member-role">Lead Designer</span>
+                    <p class="member-bio">With 8 years of experience in UI/UX design, David creates visually stunning
+                        and intuitive interfaces that users love.</p>
+                    <div class="member-social">
+                        <a href="#" aria-label="Sarah's Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Sarah's LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Sarah's Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img-container">
+                        <img src="dabo.jpg" alt="dabo" class="member-img">
+                    </div>
+                    <h3>Dabo Johnson</h3>
+                    <span class="member-role">Senior Developer</span>
+                    <p class="member-bio">Full-stack developer with expertise in modern JavaScript frameworks and
+                        scalable architecture solutions.</p>
+                    <div class="member-social">
+                        <a href="#" aria-label="Michael's GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Michael's LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Michael's Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img-container"
+                        style="display: flex; align-items: center; justify-content: center;">
+                        <img src="henry.jpg" alt="henry" class="member-img"
+                            style="object-fit: cover; object-position: top center;">
+                    </div>
+                    <h3>Henry Ejiofor</h3>
+                    <span class="member-role">Project Manager</span>
+                    <p class="member-bio">Ensures projects are delivered on time and exceed client expectations with his
+                        exceptional organizational skills.</p>
+                    <div class="member-social">
+                        <a href="#" aria-label="David's LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="David's Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="David's Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+    <div class="container">
+        <h2 class="section-title">Our Portfolio</h2>
+        <p class="text-center" style="max-width: 800px; margin: 0 auto 3rem;">Explore our recent work - real websites we've designed and developed for our clients across various industries.</p>
+        <div class="portfolio-grid">
+            <!-- Site 1 -->
+            <div class="portfolio-item">
+                <div class="iframe-container">
+                    <iframe src="https://henry-port00.vercel.app/" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Client Name 1</h3>
+                    <a href="https://henry-port00.vercel.app/" target="_blank">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Site 2 -->
+            <div class="portfolio-item">
+                <div class="iframe-container">
+                    <iframe src="https://xtreme-grills-s1qa.vercel.app" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Client Name 2</h3>
+                    <a href="https://xtreme-grills-s1qa.vercel.app" target="_blank">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Site 3 -->
+            <div class="portfolio-item">
+                <div class="iframe-container">
+                    <iframe src="https://ejioforport-hd8p.vercel.app/" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Surevet clinic</h3>
+                    <a href="https://ejioforport-hd8p.vercel.app/" target="_blank">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Site 4 -->
+            <div class="portfolio-item">
+                <div class="iframe-container">
+                    <iframe src="https://vetmax.vercel.app/" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Client Name 4</h3>
+                    <a href="https://vetmax.vercel.app/" target="_blank">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Site 5 -->
+            <div class="portfolio-item">
+                <div class="iframe-container">
+                    <iframe src="https://eatlocal-ng.vercel.app/" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Client Name 5</h3>
+                    <a href="#" target="_blank">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Site 6 -->
+            <div class="portfolio-item">
+                <div class="iframe-container">
+                    <iframe src="https://boleabuja1.vercel.app/" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Client Name 6</h3>
+                    <a href="https://boleabuja1.vercel.app/" target="_blank">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Site 7 -->
+            <div class="portfolio-item">
+                <div class="iframe-container">
+                    <iframe src="https://apexgym.vercel.app/" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Client Name 7</h3>
+                    <a href="https://apexgym.vercel.app/" target="_blank">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Site 8 -->
+            <div class="portfolio-item">
+                <div class="iframe-container">
+                    <iframe src="https://www.polarisvetconsult.com.ng" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Client Name 8</h3>
+                    <a href="#" target="_blank">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Site 9 -->
+            <div class="portfolio-item">
+                <div class="iframe-container">
+                    <iframe src="https://www.polarisvetconsult.com.ng" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Client Name 9</h3>
+                    <a href="https://eatlocal-ng.vercel.app/" target="_blank">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Site 10 -->
+            <div class="portfolio-item">
+                <div class="iframe-container">
+                    <iframe src="https://wow-kennel.vercel.app/" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Client Name 10</h3>
+                    <a href="https://wow-kennel.vercel.app/" target="_blank">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- More to come placeholder -->
+            <div class="portfolio-item coming-soon">
+                <div class="coming-soon-content">
+                    <i class="fas fa-plus-circle"></i>
+                    <h3>More Projects Coming Soon</h3>
+                    <p>We're constantly working on new and exciting projects!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--white);">What Our Clients Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        Pixel Forge transformed our online presence completely. Their attention to detail and creative
+                        approach resulted in a website that perfectly represents our brand and has significantly
+                        increased our conversions.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="Jennifer Parker" class="author-img">
+                        <div class="author-info">
+                            <h4>Jennifer Eluidike</h4>
+                            <p>CEO, Luxe Fashion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        Working with Pixel Forge was a game-changer for our business. Their mobile app not only looks
+                        fantastic but has improved our customer engagement by over 200%. Highly recommend their
+                        services!
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Robert Chen" class="author-img">
+                        <div class="author-info">
+                            <h4>Robert Amami</h4>
+                            <p>Founder, TaskMaster</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="games-section">
+        <!-- Decorative floating elements -->
+        <div class="floating floating-1 circle"></div>
+        <div class="floating floating-2 triangle"></div>
+        <div class="floating floating-3 circle"></div>
+
+        <div class="container">
+            <h2 class="section-title">Our Games Collection</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <h3>Tic Tac Toe</h3>
+                    <p>Classic game of X's and O's. Challenge your friends or play against our smart AI in this timeless
+                        strategy game.</p>
+                    <a href="tictactoe.html" class="btn">Play Now</a>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Memory Match</h3>
+                    <p>Test your memory skills with colorful cards. Match pairs as quickly as possible and beat your
+                        high score!</p>
+                    <a href="memory.html" class="btn">Play Now</a>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-icon">
+                        <i class="fas fa-worm"></i>
+                    </div>
+                    <h3>Snake Game</h3>
+                    <p>Classic snake gameplay. Grow your snake as long as possible without hitting the walls or
+                        yourself!</p>
+                    <a href="snake.html" class="btn">Play Now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Have a project in mind or want to discuss how we can help your business? Reach out to us through
+                        any of these channels.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Our Office</h4>
+                                <p>FREELANCING COMPANY BASED IN NIGERIA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Call Us</h4>
+                                <a href="tel:+23473584185">+234 070-3508-4185</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Us</h4>
+                                <a href="mailto:hello@pixelforge.com">Ejioforhenry29@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Working Hours</h4>
+                                <p>Monday - Friday: 9am - 6pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 2rem;">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/pixelforge4?igsh=MTE4NW5tajRnYTZkeA%3D%3D&utm_source=qr"
+                            class="social-link" aria-label="Follow us on Instagram" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@px_forge?_t=ZM-8xFeTkHqmts&_r=1" class="social-link"
+                            aria-label="Follow us on TikTok" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/07035084185" class="social-link" aria-label="Contact us on WhatsApp"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/pixelforge" class="social-link" aria-label="Follow us on GitHub"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Pixel Forge</h3>
+                    <p>We craft digital experiences that help businesses grow and succeed in the online world.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/pixelforge4?igsh=MTE4NW5tajRnYTZkeA%3D%3D&utm_source=qr"
+                            class="social-link" aria-label="Follow us on Instagram" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@px_forge?_t=ZM-8xFeTkHqmts&_r=1" class="social-link"
+                            aria-label="Follow us on TikTok" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/07035084185" class="social-link" aria-label="Contact us on WhatsApp"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/pixelforge" class="social-link" aria-label="Follow us on GitHub"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile App Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">SEO Services</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">E-commerce Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>based in Nigeria</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span><a href="tel:+2347035084185">07035084185</a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:ejioforhenry29@gmail.com.com">Ejioforhenry2@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-sat: 9am - 9pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pixel Forge. All Rights Reserved. | Designed with <i class="fas fa-heart"
+                        style="color: var(--secondary-color);"></i> by Pixel Forge</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Button -->
+    <div id="scrollBtn" class="scroll-btn" title="Go to top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+           <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+    </body>
